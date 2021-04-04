@@ -1,0 +1,9 @@
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\MonModele\bin\Debug\netcoreapp3.1\MonModele.deps.json
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\MonModele\bin\Debug\netcoreapp3.1\MonModele.dll
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\MonModele\bin\Debug\netcoreapp3.1\MonModele.pdb
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\MonModele\obj\Debug\netcoreapp3.1\MonModele.csprojAssemblyReference.cache
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\MonModele\obj\Debug\netcoreapp3.1\MonModele.AssemblyInfoInputs.cache
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\MonModele\obj\Debug\netcoreapp3.1\MonModele.AssemblyInfo.cs
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\MonModele\obj\Debug\netcoreapp3.1\MonModele.csproj.CoreCompileInputs.cache
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\MonModele\obj\Debug\netcoreapp3.1\MonModele.dll
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\MonModele\obj\Debug\netcoreapp3.1\MonModele.pdb

@@ -1,0 +1,9 @@
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\Ressources\bin\Debug\netstandard2.0\Ressources.deps.json
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\Ressources\bin\Debug\netstandard2.0\Ressources.dll
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\Ressources\bin\Debug\netstandard2.0\Ressources.pdb
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\Ressources\obj\Debug\netstandard2.0\Ressources.csprojAssemblyReference.cache
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\Ressources\obj\Debug\netstandard2.0\Ressources.AssemblyInfoInputs.cache
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\Ressources\obj\Debug\netstandard2.0\Ressources.AssemblyInfo.cs
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\Ressources\obj\Debug\netstandard2.0\Ressources.csproj.CoreCompileInputs.cache
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\Ressources\obj\Debug\netstandard2.0\Ressources.dll
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\Ressources\obj\Debug\netstandard2.0\Ressources.pdb

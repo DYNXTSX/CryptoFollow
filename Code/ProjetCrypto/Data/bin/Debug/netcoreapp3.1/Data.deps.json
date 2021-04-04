@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Data/1.0.0": {
+        "dependencies": {
+          "MonModele": "1.0.0",
+          "Ressources": "1.0.0"
+        },
+        "runtime": {
+          "Data.dll": {}
+        }
+      },
+      "MonModele/1.0.0": {
+        "runtime": {
+          "MonModele.dll": {}
+        }
+      },
+      "Ressources/1.0.0": {
+        "runtime": {
+          "Ressources.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MonModele/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Ressources/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

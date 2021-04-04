@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="WpfApp1.UCF.UC_CryptoMini"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1.UCF"
+             mc:Ignorable="d"
+             Background="#564d4d" >
+    <Grid Height="50" Width="200">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+    </Grid>
+</UserControl>

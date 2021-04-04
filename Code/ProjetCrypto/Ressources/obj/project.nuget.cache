@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "V0lDYzy/sfxj3FSTf9i7vr90SdS/3S5Wcb/4mCwu4bGrX3qDHS9asSHiuCDJ2Muw2W3YHo5Ij1u7KuKxJFJb0A==",
+  "success": true,
+  "projectFilePath": "F:\\Bureau\\Projet\\CryptoFollow\\Code\\ProjetCrypto\\Ressources\\Ressources.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dynotso\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Dynotso\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
