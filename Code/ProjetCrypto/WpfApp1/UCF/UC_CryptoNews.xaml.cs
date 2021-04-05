@@ -11,22 +11,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp1
+namespace WpfApp1.UCF
 {
     /// <summary>
-    /// Logique d'interaction pour NewsWindow.xaml
+    /// Logique d'interaction pour UC_CryptoNews.xaml
     /// </summary>
-    public partial class NewsWindow : Window
+    public partial class UC_CryptoNews : UserControl
     {
-        public NewsWindow()
+        public UC_CryptoNews()
         {
             InitializeComponent();
-            afficheurCryptos.DataContext = (Application.Current as App).allCryptos;
-        }
-
-        private void validerCrypto(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

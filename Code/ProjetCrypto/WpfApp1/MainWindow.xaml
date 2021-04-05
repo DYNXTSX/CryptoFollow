@@ -12,7 +12,7 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="9*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="25*"/>
             <ColumnDefinition Width="*"/>
@@ -31,23 +31,40 @@
         <TextBlock Grid.Column="3" Grid.Row="2" x:Name="titreGraph" HorizontalAlignment="Left" Text="Le Graph" Foreground="white" FontSize="29" FontWeight="Bold" VerticalAlignment="Bottom"/>
 
         <!-- Listes des cryptos -->
-        <Viewbox Grid.Row="1" Grid.Column="1" Grid.RowSpan="3">
-            <ListBox x:Name="afficheurCryptos" ItemsSource="{Binding LesCryptos}" HorizontalAlignment="Center">
-                <ListBox.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <WrapPanel/>
-                    </ItemsPanelTemplate>
-                </ListBox.ItemsPanel>
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <UCF:UC_CryptoMini MouseLeftButtonUp="ChoixCrypto"/>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
-        </Viewbox>
-        
-        <!-- Buttons -->
-        <Button Content="Button" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+        <ScrollViewer  Grid.Row="1" Grid.Column="1" Grid.RowSpan="3" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto">
+            <Viewbox>
+                <ListBox Background="Transparent" 
+                         BorderBrush="Transparent" 
+                         ItemContainerStyle="{StaticResource Style2}" 
+                         SelectionChanged="afficheurCryptos_SelectionChanged" 
+                         SelectedIndex="0"
+                         x:Name="afficheurCryptos" 
+                         ItemsSource="{Binding LesCryptos}" 
+                         HorizontalAlignment="Center" 
+                         VerticalAlignment="Top">
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel Orientation="Vertical"/>
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Height="50" Width="200">
+                                <UCF:UC_CryptoMini/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            
+            </Viewbox>
+        </ScrollViewer>
 
+        <!-- Buttons -->
+        <Button Content="Button" Grid.Column="1" Click="AjoutCrypto" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+
+        <Grid Grid.Row="1" Grid.Column="3">
+            <UCF:UC_CryptoNews x:Name="lesNews" HorizontalAlignment="Stretch" DataContext="{Binding ElementName=afficheurCryptos, UpdateSourceTrigger=PropertyChanged, Path=SelectedItem}"/>
+        </Grid>
+        
     </Grid>
 </Window>

@@ -13,7 +13,13 @@
     <Compile Update="NewsWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UCF\UC_ChangeNews.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UCF\UC_CryptoMini.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UCF\UC_CryptoNews.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -27,7 +33,13 @@
     <Page Update="NewsWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="UCF\UC_ChangeNews.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="UCF\UC_CryptoMini.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UCF\UC_CryptoNews.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

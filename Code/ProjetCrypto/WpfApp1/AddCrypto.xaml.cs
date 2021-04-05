@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MonModele;
 
 namespace WpfApp1
 {
@@ -21,6 +22,29 @@ namespace WpfApp1
         public AddCrypto()
         {
             InitializeComponent();
+        }
+
+        private void validerCrypto(object sender, RoutedEventArgs e)
+        {
+            if (nomCrypto.Text.ToString() == "" || nomCrypto.Text.ToString() == "nom")
+                MessageBox.Show("Saisir un nom");
+            else if (imageCrypto.Text.ToString() == "" || imageCrypto.Text.ToString() == "image")
+                MessageBox.Show("Saisir une image");
+            else if(combienJAI.Text.ToString() == "" || combienJAI.Text.ToString() == "xxx")
+                MessageBox.Show("Saisir un montant");
+            else if(coutCrypto.Text.ToString() == "" || coutCrypto.Text.ToString() == "xxx")
+                MessageBox.Show("Saisir un montant");
+            else
+            {
+                (Application.Current as App).allCryptos.LesCryptos.Add(
+                    new Crypto(nomCrypto.Text.ToString(), 
+                    imageCrypto.Text.ToString(), 
+                    Convert.ToDouble(coutCrypto.Text.ToString()), 
+                    Convert.ToDouble(combienJAI.Text.ToString()),
+                    Convert.ToDouble(cbnJai.Text.ToString())
+                    ));
+                Close();
+            }
         }
     }
 }

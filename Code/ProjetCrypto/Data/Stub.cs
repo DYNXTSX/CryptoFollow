@@ -14,7 +14,7 @@ namespace Data
                 listeCrypto.Chargement();
             else
             {
-                listeCrypto.LesCryptos.Add(new Crypto("Bitcoin", "", 50000, 0.001));
+                listeCrypto.LesCryptos.Add(new Crypto("Bitcoin", "https://research.binance.com/static/images/projects/bitcoin/logo.png", 50000, 0.001,1));
             }
 
             return listeCrypto;

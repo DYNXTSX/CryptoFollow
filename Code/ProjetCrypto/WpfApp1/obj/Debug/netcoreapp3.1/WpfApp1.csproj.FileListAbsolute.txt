@@ -32,3 +32,7 @@ F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\WpfApp1\obj\Debug\netcoreapp3.1\
 F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\WpfApp1\obj\Debug\netcoreapp3.1\UCF\UC_CryptoMini.g.cs
 F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\WpfApp1\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
 F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\WpfApp1\obj\Debug\netcoreapp3.1\UCF\UC_CryptoMini.baml
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\WpfApp1\obj\Debug\netcoreapp3.1\UCF\UC_CryptoNews.g.cs
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\WpfApp1\obj\Debug\netcoreapp3.1\UCF\UC_CryptoNews.baml
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\WpfApp1\obj\Debug\netcoreapp3.1\UCF\UC_ChangeNews.g.cs
+F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\WpfApp1\obj\Debug\netcoreapp3.1\UCF\UC_ChangeNews.baml

@@ -3,7 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:WpfApp1"
+      xmlns:local="clr-namespace:WpfApp1" xmlns:UCF="clr-namespace:WpfApp1.UCF"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Some news"
@@ -20,6 +20,33 @@
             <RowDefinition Height="10*"/>
             <RowDefinition Height="1.5*"/>
         </Grid.RowDefinitions>
+
+        <ScrollViewer  Grid.Row="1" Grid.Column="1" Grid.RowSpan="3" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto">
+            <Viewbox>
+                <ListBox Background="Transparent" 
+                         BorderBrush="Transparent" 
+                         SelectedIndex="0"
+                         x:Name="afficheurCryptos" 
+                         ItemsSource="{Binding LesCryptos}" 
+                         HorizontalAlignment="Center" 
+                         VerticalAlignment="Center">
+                    <ListBox.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel Orientation="Vertical"/>
+                        </ItemsPanelTemplate>
+                    </ListBox.ItemsPanel>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid Height="50" Width="400">
+                                <UCF:UC_ChangeNews/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+
+            </Viewbox>
+        </ScrollViewer>
+
 
         <TextBlock Grid.Column="1" x:Name="titreCrypto" HorizontalAlignment="Center" Text="Les évolutions" Foreground="white" FontSize="29" FontWeight="Bold" VerticalAlignment="Center"/>
         <Button x:Name="bouttonvalid" Style="{StaticResource bouttonvaliderajout}" HorizontalAlignment="Center" Grid.Column="1" Click="validerCrypto"/>

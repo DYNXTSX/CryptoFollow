@@ -1,0 +1,107 @@
+﻿<UserControl x:Class="WpfApp1.UCF.UC_CryptoNews"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1.UCF"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Montant Crypto :"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Left"
+                   Foreground="White" 
+                   FontSize="15" 
+                   FontFamily="Arial" 
+                   FontWeight="Bold"
+                   />
+
+        <TextBlock Text="Combien j'en ai :"
+                   Grid.Row="0"
+                   Grid.Column="1"
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Left"
+                   Foreground="White" 
+                   FontSize="15" 
+                   FontFamily="Arial" 
+                   FontWeight="Bold"
+                   />
+
+        <TextBlock Text="Mes bénéfices :"
+                   Grid.Row="0"
+                   Grid.Column="2"
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Left"
+                   Foreground="White" 
+                   FontSize="15" 
+                   FontFamily="Arial" 
+                   FontWeight="Bold"
+                   />
+
+        <TextBlock Text="{Binding ValeurEuros}"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Foreground="White" 
+                   FontSize="25" 
+                   FontFamily="Arial" 
+                   FontWeight="Bold"
+                   />
+
+        <TextBlock Text="{Binding NbCrypto}"
+                   Grid.Row="1"
+                   Grid.Column="1"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Foreground="White" 
+                   FontSize="25" 
+                   FontFamily="Arial" 
+                   FontWeight="Bold"
+                   />
+
+        <TextBlock Text="{Binding Benef}"
+                   Grid.Row="1"
+                   Grid.Column="2"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Foreground="White" 
+                   FontSize="25" 
+                   FontFamily="Arial" 
+                   FontWeight="Bold"
+                   />
+
+
+
+        <!--
+        <TextBlock Text="{Binding Nom}"
+                   TextWrapping="Wrap" 
+                   Grid.Row="0"
+                       VerticalAlignment="Top" 
+                       Foreground="White" 
+                       FontSize="30" 
+                       FontFamily="Arial" 
+                       FontWeight="Bold"/>
+        <TextBlock Text="{Binding ValeurEuros}"
+                   TextWrapping="Wrap" 
+                   Grid.Row="1"
+                       VerticalAlignment="Top" 
+                       Foreground="White" 
+                       FontSize="30" 
+                       FontFamily="Arial" 
+                       FontWeight="Bold"/>
+        -->
+    </Grid>
+</UserControl>

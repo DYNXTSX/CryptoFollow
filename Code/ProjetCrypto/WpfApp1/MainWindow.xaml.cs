@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MonModele;
 
 namespace WpfApp1
 {
@@ -24,16 +25,29 @@ namespace WpfApp1
         {
             InitializeComponent();
             afficheurCryptos.DataContext = (Application.Current as App).allCryptos;
+            OpenNews();
+        }
+
+        private void OpenNews()
+        {
+            NewsWindow news = new NewsWindow();
+            news.ShowDialog();
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
         {
+            (Application.Current as App).allCryptos.Sauvegarde();
+        }
+
+        private void afficheurCryptos_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
 
         }
 
-        private void ChoixCrypto(object sender, MouseButtonEventArgs e)
+        private void AjoutCrypto(object sender, RoutedEventArgs e)
         {
-
+            AddCrypto ajout = new AddCrypto();
+            ajout.ShowDialog();
         }
     }
 }

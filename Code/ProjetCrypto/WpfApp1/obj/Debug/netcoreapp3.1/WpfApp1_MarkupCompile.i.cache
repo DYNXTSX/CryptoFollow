@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 F:\Bureau\Projet\CryptoFollow\Code\ProjetCrypto\WpfApp1\App.xaml
-4446073430
+63404537
 
-8-1404838451
+101310050214
 195-730175634
-AddCrypto.xaml;MainWindow.xaml;NewsWindow.xaml;UCF\UC_CryptoMini.xaml;
+AddCrypto.xaml;MainWindow.xaml;NewsWindow.xaml;UCF\UC_ChangeNews.xaml;UCF\UC_CryptoMini.xaml;UCF\UC_CryptoNews.xaml;
 
 True
 
